@@ -12,7 +12,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { Brands_Type } from '../../../Data/Brands';
 
 

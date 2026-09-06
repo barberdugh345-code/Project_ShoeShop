@@ -1,12 +1,6 @@
 
 import { createRouter,createWebHistory } from "vue-router";
 import Home from "../Shop/Home.vue";
-
-import Woman from "../Shop/Woman/Woman.vue";
-import Kids from "../Shop/Kids/Kids.vue";
-import Brands from "../Shop/Brands/Brands.vue";
-import Sals from "../Shop/Sales/Sals.vue";
-import Accesories from "../Shop/Accesory/Accesories.vue";
 import Man_Detail from "../Shop/Man/Man_Detail.vue";
 import Woman_Detail from "../Shop/Woman/Woman_Detail.vue";
 import Kids_Detail from "../Shop/Kids/Kids_Detail.vue";
@@ -14,6 +8,13 @@ import Brands_Detail from "../Shop/Brands/Brands_Detail.vue";
 import Accesory_Detail from "../Shop/Accesory/Accesory_Detail.vue";
 import Sales_Detail from "../Shop/Sales/Sales_Detail.vue";
 import Man from "../Shop/Man/Man.vue";
+import Woman from "../Shop/Woman/Woman.vue";
+import Kids from "../Shop/Kids/Kids.vue";
+import Brands from "../Shop/Brands/Brands.vue";
+import Accesories from "../Shop/Accesory/Accesories.vue";
+import Sals from "../Shop/Sales/Sals.vue";
+
+
 
 
 const routes =[
