@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-for="item in Brands_Type">
+        <div v-for="item in BRANDS_DATA" :key="item.id">
             <p>{{ item.id }}</p>
             <p>{{ item.name }}</p>
             <p>{{ item.country }}</p>
@@ -13,9 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { Brands_Type } from '../../../data/Brands';
-
-
+import { BRANDS_DATA } from '../../../data/Brands';
 </script>
 
 <style lang="scss" scoped>

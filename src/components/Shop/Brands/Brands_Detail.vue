@@ -15,21 +15,21 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { Brands_Type } from '../../../data/Brands';
+import { BRANDS_DATA } from '../../../data/Brands';
+import type { ShoeBrand } from '../../../data/Brands';
 import { ref, watchEffect } from 'vue';
 
-
 const route = useRoute();
-const brandid = parseInt(route.params.id as string)
-const brand = Brands_Type.find(br => br.id == brandid)
+const brandid = parseInt(route.params.id as string);
 
-const activeImage = ref('')
-watchEffect(()=>{
-    if(brand?.logoUrl.logo){
-    activeImage.value=brand?.logoUrl.logo  
+const brand = BRANDS_DATA.find((br: ShoeBrand) => br.id == brandid);
+
+const activeImage = ref('');
+watchEffect(() => {
+    if (brand?.logoUrl.logo) {
+    activeImage.value = brand.logoUrl.logo;
     }
-    
-})
+});
 </script>
 
 <style lang="scss" scoped>

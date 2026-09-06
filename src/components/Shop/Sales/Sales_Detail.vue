@@ -21,22 +21,18 @@
         </div>
         <div>
             <div v-if="pro">
-                <h1>
-                    <img :src="pro.bannerUrl" alt="">
-                </h1>
-                <div>
-                    <h1>{{ pro.title }}</h1>
-                    <h1>{{ pro.description }}</h1>
-                    <h1>{{ pro.category }}</h1>
-                    <h1>{{ pro.discount }}</h1>
-                    <h1>{{ pro.code }}</h1>
-                    <h1>{{ pro.badge }}</h1>
-                    <h1>{{ pro.active }}</h1>
-                </div>
-                <div else>
-                    404 Not Found!
-                </div>
-            </div>
+    <h1>
+        <img :src="pro.imageUrl.img" alt="">
+    </h1>
+    <div>
+        <h1>{{ pro.title }}</h1>
+        <h1>{{ pro.description }}</h1>
+        <h1>{{ pro.category }}</h1>
+        <h1>{{ pro.discountPercent }}</h1>
+        <h1>{{ pro.promoCode }}</h1>
+        <h1>{{ pro.promoTag }}</h1>
+    </div>
+</div>
         </div>
     </div>
 </template>
@@ -61,11 +57,10 @@ watchEffect(()=>{
         activeImage.value = sal.imageUrl.img
     }
 })
-
 const activeImage1 = ref('')
-watchEffect(()=>{
-    if(pro?.bannerUrl){
-        activeImage1.value = pro.bannerUrl
+watchEffect(() => {
+    if (pro?.imageUrl.img) {
+        activeImage1.value = pro.imageUrl.img
     }
 })
 

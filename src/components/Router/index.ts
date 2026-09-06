@@ -1,20 +1,18 @@
 
 import { createRouter,createWebHistory } from "vue-router";
-import Home from "../Shop/Home.vue";
-import Man_Detail from "../Shop/Man/Man_Detail.vue";
-import Woman_Detail from "../Shop/Woman/Woman_Detail.vue";
-import Kids_Detail from "../Shop/Kids/Kids_Detail.vue";
-import Brands_Detail from "../Shop/Brands/Brands_Detail.vue";
-import Accesory_Detail from "../Shop/Accesory/Accesory_Detail.vue";
-import Sales_Detail from "../Shop/Sales/Sales_Detail.vue";
-import Man from "../Shop/Man/Man.vue";
-import Woman from "../Shop/Woman/Woman.vue";
-import Kids from "../Shop/Kids/Kids.vue";
-import Brands from "../Shop/Brands/Brands.vue";
-import Accesories from "../Shop/Accesory/Accesories.vue";
-import Sals from "../Shop/Sales/Sals.vue";
-
-
+import Home from "../shop/Home.vue";
+import Man from "../shop/man/Man.vue";
+import Woman from "../shop/women/Woman.vue";
+import Kids from "../shop/kids/Kids.vue";
+import Brands from "../shop/brands/Brands.vue";
+import Accesories from "../shop/accesory/Accesories.vue";
+import Sales from "../shop/sales/Sales.vue";
+import Man_Detail from "../shop/man/Man_Detail.vue";
+import Woman_Detail from "../shop/women/Woman_Detail.vue";
+import Kids_Detail from "../shop/kids/Kids_Detail.vue";
+import Brands_Detail from "../shop/brands/Brands_Detail.vue";
+import Accesory_Detail from "../shop/accesory/Accesory_Detail.vue";
+import Sales_Detail from "../shop/sales/Sales_Detail.vue";
 
 
 const routes =[
@@ -44,7 +42,7 @@ const routes =[
     },
     {
         path:'/sales',
-        component:Sals
+        component:Sales
     },
     {
         path:'/manD:id',

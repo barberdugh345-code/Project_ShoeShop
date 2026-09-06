@@ -15,13 +15,12 @@
         <div v-for="item in Promo_Type" :key="item.id">
             <p>{{ item.id }}</p>
             <p>{{ item.title }}</p>
-            <p>{{ item.discount }}</p>
-            <p>{{ item.code }}</p>
+            <p>{{ item.discountPercent }}</p>
+            <p>{{ item.promoCode }}</p>
             <p>{{ item.category }}</p>
-            <p>{{ item.badge }}</p>
-            <p>{{ item.bannerUrl }}</p>
+            <p>{{ item.promoTag }}</p>
+            <p>{{ item.imageUrl.img }}</p>
             <p>{{ item.description }}</p>
-            <p>{{ item.active }}</p>
         </div>
     </div>
 </template>
