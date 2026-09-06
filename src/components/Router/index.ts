@@ -1,7 +1,7 @@
 
 import { createRouter,createWebHistory } from "vue-router";
 import Home from "../Shop/Home.vue";
-import Man from "../Shop/Man/Man.vue";
+
 import Woman from "../Shop/Woman/Woman.vue";
 import Kids from "../Shop/Kids/Kids.vue";
 import Brands from "../Shop/Brands/Brands.vue";
@@ -13,6 +13,7 @@ import Kids_Detail from "../Shop/Kids/Kids_Detail.vue";
 import Brands_Detail from "../Shop/Brands/Brands_Detail.vue";
 import Accesory_Detail from "../Shop/Accesory/Accesory_Detail.vue";
 import Sales_Detail from "../Shop/Sales/Sales_Detail.vue";
+import Man from "../Shop/Man/Man.vue";
 
 
 const routes =[
@@ -74,4 +75,5 @@ const router = createRouter({
     history:createWebHistory(),
     routes
 })
+
 export default router;

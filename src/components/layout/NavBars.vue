@@ -3,7 +3,7 @@
         <nav>
             <router-link to="/">Home</router-link>
             <router-link to="/man">Man</router-link>
-            <router-link to="/manD"></router-link>
+            <router-link to="/manD "></router-link>
             <router-link to="/woman">Woman</router-link>
             <router-link to="womanD"></router-link>
             <router-link to="/kids">Kids</router-link>
