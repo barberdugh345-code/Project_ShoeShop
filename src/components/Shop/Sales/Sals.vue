@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import { ForSales_Type, Promo_Type } from '../../../Data/Sales';
+import { ForSales_Type, Promo_Type } from '../../../data/Sales';
 
 
 </script>

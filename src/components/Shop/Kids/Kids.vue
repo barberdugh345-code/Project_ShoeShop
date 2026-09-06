@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 
-import { Kids_Types } from '../../../Data/Kids';
+import { Kids_Types } from '../../../data/Kids';
 </script>
 
 <style lang="scss" scoped>

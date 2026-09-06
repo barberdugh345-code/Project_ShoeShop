@@ -67,7 +67,7 @@ const routes =[
         component:Accesory_Detail
     },
     {
-        path:'/saleD:id',
+        path:'/SaleD:id',
         component:Sales_Detail
     }
 ]

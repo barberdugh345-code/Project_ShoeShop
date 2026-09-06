@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { Brands_Type } from '../../../Data/Brands';
+import { Brands_Type } from '../../../data/Brands';
 import { ref, watchEffect } from 'vue';
 
 
@@ -26,7 +26,7 @@ const brand = Brands_Type.find(br => br.id == brandid)
 const activeImage = ref('')
 watchEffect(()=>{
     if(brand?.logoUrl.logo){
-      activeImage.value=brand?.logoUrl.logo  
+    activeImage.value=brand?.logoUrl.logo  
     }
     
 })

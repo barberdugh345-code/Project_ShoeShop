@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { Woman_Type } from '../../../Data/Woman';
+import { Woman_Type } from '../../../data/Woman';
 import { ref, watchEffect } from 'vue';
 
 

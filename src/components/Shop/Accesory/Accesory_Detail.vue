@@ -22,7 +22,7 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
 import { ref, watchEffect } from 'vue';
-import { Accesories } from '../../../Data/Accesories.ts';
+import { Accesories } from '../../../data/Accesories';
 
 
 

@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { Kids_Types } from '../../../Data/Kids';
+import { Kids_Types } from '../../../data/Kids';
 import { ref, watchEffect } from 'vue';
 
 

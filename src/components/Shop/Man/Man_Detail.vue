@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { Man_Type } from '../../../Data/Man';
+import { Man_Type } from '../../../data/Man';
 import { ref, watchEffect } from 'vue';
 
 

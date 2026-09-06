@@ -43,7 +43,7 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { ForSales_Type, Promo_Type } from '../../../Data/Sales';
+import { ForSales_Type, Promo_Type } from '../../../data/Sales';
 import { watchEffect } from 'vue';
 import { ref } from 'vue';
 

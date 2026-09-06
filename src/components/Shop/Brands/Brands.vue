@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { Brands_Type } from '../../../Data/Brands';
+import { Brands_Type } from '../../../data/Brands';
 
 
 </script>

@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { Man_Type } from '../../../Data/Man';
+import { Man_Type } from '../../../data/Man';
 
 
 </script>

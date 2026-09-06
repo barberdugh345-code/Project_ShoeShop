@@ -1,25 +1,20 @@
-<script setup lang="ts">
-
-import NavBars from './components/layout/NavBars.vue';
-// import Footer from './components/layout/Footer.vue';
-
-
-
-</script>
-
 <template>
-  <nav>
-    <NavBars/>
-  </nav>
+  <div class="min-h-screen flex flex-col bg-gray-50 font-sans text-gray-900">
 
+    <NavBars />
 
-  <main>
-      <router-view></router-view>
-  </main>
+    <main class="flex-grow">
 
-  
-  <!-- <footer>
-    <Footer/>
-  </footer> -->
+      <router-view />
+      
+    </main>
 
+    <Footer />
+
+  </div>
 </template>
+
+<script setup lang="ts">
+import Footer from './components/layout/Footer.vue';
+import NavBars from './components/layout/NavBars.vue';
+</script>

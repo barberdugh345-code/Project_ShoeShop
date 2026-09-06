@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { Accesories } from '../../../Data/Accesories';
+import { Accesories } from '../../../data/Accesories';
 
 
 </script>

@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { Woman_Type } from '../../../Data/Woman';
+import { Woman_Type } from '../../../data/Woman';
 
 
 </script>
