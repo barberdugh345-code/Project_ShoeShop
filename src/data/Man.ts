@@ -14,7 +14,7 @@ export interface Shoe_man{
 }
 
 export const Man_Type : Shoe_man[] = [
-   {
+  {
     id: 1,
     title: "Air Force 1 '07",
     brand: "Nike",
