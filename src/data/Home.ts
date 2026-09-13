@@ -18,7 +18,8 @@ export type CategoryType =
   | 'Laces'
   | 'Bags'
   | 'Hats'
-  | 'Insoles';
+  | 'Insoles'
+  | 'Heels';
 
 export interface ImageUrls {
   img: string;
@@ -30,7 +31,7 @@ export interface Shoe_man {
   id: number;
   title: string;
   brand: string;
-  category: 'Running' | 'Casual' | 'Basketball' | 'Formal' | 'Skate';
+  category: 'Running' | 'Casual' | 'Basketball' | 'Formal' | 'Skate' | 'Training';
   price: number;
   imageUrl: ImageUrls;
   sizes: number[];
@@ -43,7 +44,7 @@ export interface Shoe_kids {
   brand: string;
   category: 'Running' | 'Casual' | 'Basketball' | 'School' | 'Sandals';
   price: number;
-  images: ImageUrls;
+  imageUrl: ImageUrls;
   sizes: number[];
   inStock: boolean;
 }
@@ -54,7 +55,7 @@ export interface Shoe_women {
   brand: string;
   category: 'Running' | 'Casual' | 'Basketball' | 'Boots' | 'Heels' | 'Sandals' | 'Training';
   price: number;
-  images: ImageUrls;
+  imageUrl: ImageUrls;
   sizes: number[];
   inStock: boolean;
 }
@@ -152,9 +153,9 @@ const MEN_SHOES: Shoe_man[] = [
     category: "Casual",
     price: 115,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06"
+      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 10.5, 11],
     inStock: true
@@ -166,42 +167,140 @@ const MEN_SHOES: Shoe_man[] = [
     category: "Running",
     price: 190,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
-      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+      img: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7.5, 8, 9, 9.5, 10, 11, 12],
     inStock: true
+  },
+  {
+    id: 3,
+    title: "Air Jordan 1 Retro High",
+    brand: "Nike",
+    category: "Basketball",
+    price: 180,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [8, 9, 10, 10.5, 11, 12],
+    inStock: true
+  },
+  {
+    id: 4,
+    title: "SB Dunk Low Pro",
+    brand: "Nike",
+    category: "Skate",
+    price: 115,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [8, 8.5, 9, 10, 11],
+    inStock: true
+  },
+  {
+    id: 5,
+    title: "Classic Derby Leather",
+    brand: "Clarks",
+    category: "Formal",
+    price: 150,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [8, 9, 10, 11, 12],
+    inStock: true
+  },
+  {
+    id: 6,
+    title: "Metcon 9 Training",
+    brand: "Nike",
+    category: "Training",
+    price: 150,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [8, 8.5, 9, 9.5, 10, 10.5, 11, 12],
+    inStock: false
   }
 ];
 
 const WOMEN_SHOES: Shoe_women[] = [
   {
     id: 1,
-    title: "Air Force 1 '07",
+    title: "Air Force 1 '07 Women",
     brand: "Nike",
     category: "Casual",
     price: 115,
-    images: {
-      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06"
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
     inStock: true
   },
   {
     id: 2,
-    title: "Ultraboost Light",
+    title: "Ultraboost Light Women",
     brand: "Adidas",
     category: "Running",
     price: 190,
-    images: {
-      img: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
-      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5],
+    inStock: true
+  },
+  {
+    id: 3,
+    title: "Classic Canvas High Top",
+    brand: "Converse",
+    category: "Casual",
+    price: 65,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 6, 7, 8, 9],
+    inStock: true
+  },
+  {
+    id: 4,
+    title: "Chelsea Leather Boots",
+    brand: "Dr. Martens",
+    category: "Boots",
+    price: 170,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [6, 7, 8, 9, 10],
+    inStock: true
+  },
+  {
+    id: 5,
+    title: "Strappy Block Heels",
+    brand: "Steve Madden",
+    category: "Heels",
+    price: 90,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8],
     inStock: true
   }
 ];
@@ -213,12 +312,54 @@ const KIDS_SHOES: Shoe_kids[] = [
     brand: "Nike",
     category: "Casual",
     price: 75,
-    images: {
-      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06"
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [10, 11, 12, 13, 1, 2, 3],
+    inStock: true
+  },
+  {
+    id: 2,
+    title: "Flex Runner 2 Kids",
+    brand: "Nike",
+    category: "Running",
+    price: 50,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [11, 12, 13, 1, 2],
+    inStock: true
+  },
+  {
+    id: 3,
+    title: "Kids Comfort Slide Sandals",
+    brand: "Adidas",
+    category: "Sandals",
+    price: 35,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [1, 2, 3, 4, 5],
+    inStock: true
+  },
+  {
+    id: 4,
+    title: "Classic School Oxford",
+    brand: "Clarks",
+    category: "School",
+    price: 60,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [12, 13, 1, 2, 3, 4],
     inStock: true
   }
 ];
@@ -229,8 +370,8 @@ const BRANDS: Brand[] = [
     name: "Nike",
     slug: "nike",
     logoUrl: {
-      logo: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      icon: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      logo: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      icon: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
     },
     country: "United States",
     categories: ["Running", "Casual", "Basketball", "Skate", "Training"],
@@ -241,11 +382,107 @@ const BRANDS: Brand[] = [
     name: "Adidas",
     slug: "adidas",
     logoUrl: {
-      logo: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
-      icon: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2"
+      logo: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      icon: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
     },
     country: "Germany",
     categories: ["Running", "Casual", "Basketball", "Training"],
+    featured: true
+  },
+  {
+    id: 3,
+    name: "Converse",
+    slug: "converse",
+    logoUrl: {
+      logo: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      icon: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80"
+    },
+    country: "United States",
+    categories: ["Casual", "Skate"],
+    featured: true
+  },
+  {
+    id: 4,
+    name: "Puma",
+    slug: "puma",
+    logoUrl: {
+      logo: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=80",
+      icon: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=80"
+    },
+    country: "Germany",
+    categories: ["Running", "Casual", "Training"],
+    featured: true
+  },
+  {
+    id: 5,
+    name: "New Balance",
+    slug: "new-balance",
+    logoUrl: {
+      logo: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+      icon: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80"
+    },
+    country: "United States",
+    categories: ["Running", "Casual", "Training"],
+    featured: true
+  },
+  {
+    id: 6,
+    name: "Vans",
+    slug: "vans",
+    logoUrl: {
+      logo: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      icon: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
+    },
+    country: "United States",
+    categories: ["Casual", "Skate"],
+    featured: true
+  },
+  {
+    id: 7,
+    name: "Jordan",
+    slug: "jordan",
+    logoUrl: {
+      logo: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+      icon: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80"
+    },
+    country: "United States",
+    categories: ["Basketball", "Casual"],
+    featured: true
+  },
+  {
+    id: 8,
+    name: "Reebok",
+    slug: "reebok",
+    logoUrl: {
+      logo: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80",
+      icon: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80"
+    },
+    country: "United States",
+    categories: ["Training", "Casual", "Running"],
+    featured: true
+  },
+  {
+    id: 9,
+    name: "Asics",
+    slug: "asics",
+    logoUrl: {
+      logo: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      icon: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+    },
+    country: "Japan",
+    categories: ["Running", "Training"],
+    featured: true
+  },
+  {
+    id: 10,
+    name: "Under Armour",
+    slug: "under-armour",
+    logoUrl: {
+      logo: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      icon: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
+    },
+    country: "United States",
+    categories: ["Basketball", "Training", "Running"],
     featured: true
   }
 ];
@@ -258,9 +495,51 @@ const ACCESSORIES: Accessory[] = [
     category: "Socks",
     price: 22,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
+    },
+    inStock: true,
+    featured: true
+  },
+  {
+    id: 2,
+    title: "Sneaker Cleaning Kit",
+    brand: "Shoe Care Co.",
+    category: "Shoe Care",
+    price: 18,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
+    },
+    inStock: true,
+    featured: false
+  },
+  {
+    id: 3,
+    title: "Premium Reflective Laces",
+    brand: "LaceLab",
+    category: "Laces",
+    price: 10,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
+    },
+    inStock: true,
+    featured: false
+  },
+  {
+    id: 4,
+    title: "Athletic Duffle Bag",
+    brand: "Nike",
+    category: "Bags",
+    price: 55,
+    imageUrl: {
+      img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
     },
     inStock: true,
     featured: true
@@ -275,8 +554,26 @@ const HOMEPAGE_DATA: HomepageData = {
       subtitle: "Discover the latest performance footwear and street-ready drops.",
       ctaText: "Shop New Arrivals",
       ctaLink: "/category/new-arrivals",
-      imageUrl: "https://images.unsplash.com/photo-1552346154-21d32810aba3",
+      imageUrl: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80",
       badge: "Fall 2026 Collection"
+    },
+    {
+      id: 2,
+      title: "Run Beyond Your Limits",
+      subtitle: "Lightweight, responsive running shoes built for maximum speed.",
+      ctaText: "Explore Running",
+      ctaLink: "/category/running",
+      imageUrl: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=80",
+      badge: "Performance"
+    },
+    {
+      id: 3,
+      title: "Streetwear Essentials",
+      subtitle: "Timeless silhouettes designed for everyday urban style.",
+      ctaText: "Shop Casual",
+      ctaLink: "/category/casual",
+      imageUrl: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=80",
+      badge: "Trending Now"
     }
   ],
   featuredCategories: [
@@ -285,8 +582,32 @@ const HOMEPAGE_DATA: HomepageData = {
       name: "Men's Sneakers",
       slug: "mens",
       description: "Performance running, basketball, and lifestyle pairs.",
-      imageUrl: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
+      imageUrl: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
       itemCount: 120
+    },
+    {
+      id: 2,
+      name: "Women's Collection",
+      slug: "womens",
+      description: "Trending silhouettes, training shoes, and everyday comfort.",
+      imageUrl: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      itemCount: 95
+    },
+    {
+      id: 3,
+      name: "Kids' Footwear",
+      slug: "kids",
+      description: "Durable, comfortable, and stylish kicks for growing feet.",
+      imageUrl: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      itemCount: 60
+    },
+    {
+      id: 4,
+      name: "Shoe Care & Accessories",
+      slug: "accessories",
+      description: "Keep your sneakers clean and fresh with specialized gear.",
+      imageUrl: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      itemCount: 45
     }
   ],
   promoBanners: [
@@ -297,20 +618,47 @@ const HOMEPAGE_DATA: HomepageData = {
       discountCode: "SEASON2026",
       ctaText: "Shop Sale Items",
       ctaLink: "/sale",
-      bgImageUrl: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      bgImageUrl: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: 2,
+      title: "Member Exclusive Offer",
+      description: "Sign up today and take 15% off your very first order.",
+      discountCode: "WELCOME15",
+      ctaText: "Join Free",
+      ctaLink: "/register",
+      bgImageUrl: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80"
     }
   ],
-  spotlightBrandIds: [1, 2],
-  featuredProductIds: [1, 2],
+  spotlightBrandIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  featuredProductIds: [1, 2, 3, 4],
   testimonials: [
     {
       id: 1,
       author: "Alex Rivers",
-      avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+      avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
       rating: 5,
-      comment: "Fast shipping and 100% authentic.",
+      comment: "Fast shipping and 100% authentic sneakers.",
       verifiedPurchase: true,
       productName: "Nike Air Max 270"
+    },
+    {
+      id: 2,
+      author: "Sarah Chen",
+      avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
+      rating: 5,
+      comment: "Super comfortable for daily running! Sizing was spot on.",
+      verifiedPurchase: true,
+      productName: "Adidas Ultraboost Light"
+    },
+    {
+      id: 3,
+      author: "Marcus Vance",
+      avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      rating: 4,
+      comment: "Great customer service when I needed a size exchange.",
+      verifiedPurchase: true,
+      productName: "Air Jordan 1 Retro High"
     }
   ]
 };

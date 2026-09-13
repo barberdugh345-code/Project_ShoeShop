@@ -1,20 +1,20 @@
-export interface accesory{
-    id: number;
-    title: string;
-    brand: string;
-    category: 'Socks' | 'Shoe Care' | 'Laces' | 'Bags' | 'Hats' | 'Insoles';
-    price: number;
-    imageUrl: {
-        img: string;
-        img1: string;
-        img2: string;
-    };
-    inStock: boolean;
-    featured?: boolean;
+export interface Accessory {
+  id: number;
+  title: string;
+  brand: string;
+  category: 'Socks' | 'Shoe Care' | 'Laces' | 'Bags' | 'Hats' | 'Insoles';
+  price: number;
+  imageUrl: {
+    img: string;
+    img1: string;
+    img2: string;
+  };
+  inStock: boolean;
+  featured?: boolean;
 }
 
-export const Accesories : accesory[] = [
-    {
+export const Accessories: Accessory[] = [
+  {
     id: 1,
     title: "Everyday Cushion Crew Socks (3 Pairs)",
     brand: "Nike",
@@ -22,8 +22,8 @@ export const Accesories : accesory[] = [
     price: 22,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      img1: "https://images.unsplash.com/photo-1631888206126-d62193e6c0c2",
+      img2: "https://images.unsplash.com/photo-1582966772680-860e372bb558"
     },
     inStock: true,
     featured: true
@@ -36,8 +36,8 @@ export const Accesories : accesory[] = [
     price: 35,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+      img1: "https://images.unsplash.com/photo-1585238342024-78d387f4a707",
+      img2: "https://images.unsplash.com/photo-1556228720-195a672e8a03"
     },
     inStock: true,
     featured: true
@@ -51,7 +51,7 @@ export const Accesories : accesory[] = [
     imageUrl: {
       img: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b",
       img1: "https://images.unsplash.com/photo-1521369984180-86565a04d35f",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06"
+      img2: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9"
     },
     inStock: true,
     featured: false
@@ -65,7 +65,7 @@ export const Accesories : accesory[] = [
     imageUrl: {
       img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
       img1: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
-      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+      img2: "https://images.unsplash.com/photo-1544816155-12df9643f363"
     },
     inStock: true,
     featured: true
@@ -77,9 +77,9 @@ export const Accesories : accesory[] = [
     category: "Laces",
     price: 8,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
+      img2: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3"
     },
     inStock: true,
     featured: false
@@ -91,9 +91,9 @@ export const Accesories : accesory[] = [
     category: "Insoles",
     price: 40,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb",
+      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
     },
     inStock: true,
     featured: false
@@ -105,9 +105,9 @@ export const Accesories : accesory[] = [
     category: "Socks",
     price: 24,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
-      img1: "https://images.unsplash.com/photo-1539185441755-769473a23570",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img: "https://images.unsplash.com/photo-1631888206126-d62193e6c0c2",
+      img1: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
+      img2: "https://images.unsplash.com/photo-1582966772680-860e372bb558"
     },
     inStock: true,
     featured: false
@@ -119,9 +119,9 @@ export const Accesories : accesory[] = [
     category: "Shoe Care",
     price: 18,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+      img: "https://images.unsplash.com/photo-1585238342024-78d387f4a707",
+      img1: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+      img2: "https://images.unsplash.com/photo-1556228720-195a672e8a03"
     },
     inStock: true,
     featured: true
@@ -133,9 +133,9 @@ export const Accesories : accesory[] = [
     category: "Bags",
     price: 38,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+      img: "https://images.unsplash.com/photo-1544816155-12df9643f363",
+      img1: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+      img2: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3"
     },
     inStock: true,
     featured: false
@@ -148,8 +148,8 @@ export const Accesories : accesory[] = [
     price: 28,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
-      img1: "https://images.unsplash.com/photo-1552346154-21d32810aba3",
-      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2"
+      img1: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990",
+      img2: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9"
     },
     inStock: false,
     featured: false
@@ -161,9 +161,9 @@ export const Accesories : accesory[] = [
     category: "Shoe Care",
     price: 15,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img2: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9"
+      img: "https://images.unsplash.com/photo-1556228720-195a672e8a03",
+      img1: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+      img2: "https://images.unsplash.com/photo-1585238342024-78d387f4a707"
     },
     inStock: true,
     featured: false
@@ -175,9 +175,9 @@ export const Accesories : accesory[] = [
     category: "Shoe Care",
     price: 32,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+      img1: "https://images.unsplash.com/photo-1585238342024-78d387f4a707",
+      img2: "https://images.unsplash.com/photo-1556228720-195a672e8a03"
     },
     inStock: true,
     featured: true
@@ -190,7 +190,7 @@ export const Accesories : accesory[] = [
     price: 10,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
-      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
       img2: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3"
     },
     inStock: true,
@@ -203,9 +203,9 @@ export const Accesories : accesory[] = [
     category: "Socks",
     price: 16,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
-      img1: "https://images.unsplash.com/photo-1539185441755-769473a23570",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img: "https://images.unsplash.com/photo-1582966772680-860e372bb558",
+      img1: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
+      img2: "https://images.unsplash.com/photo-1631888206126-d62193e6c0c2"
     },
     inStock: true,
     featured: false
@@ -217,9 +217,9 @@ export const Accesories : accesory[] = [
     category: "Hats",
     price: 30,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b",
-      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
-      img2: "https://images.unsplash.com/photo-1521369984180-86565a04d35f"
+      img: "https://images.unsplash.com/photo-1521369984180-86565a04d35f",
+      img1: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b",
+      img2: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9"
     },
     inStock: true,
     featured: false
@@ -231,9 +231,9 @@ export const Accesories : accesory[] = [
     category: "Bags",
     price: 30,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
-      img1: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
-      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+      img: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
+      img1: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+      img2: "https://images.unsplash.com/photo-1544816155-12df9643f363"
     },
     inStock: true,
     featured: false
@@ -246,8 +246,8 @@ export const Accesories : accesory[] = [
     price: 25,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img1: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
     },
     inStock: true,
     featured: false
@@ -259,9 +259,9 @@ export const Accesories : accesory[] = [
     category: "Shoe Care",
     price: 12,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3"
+      img: "https://images.unsplash.com/photo-1585238342024-78d387f4a707",
+      img1: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+      img2: "https://images.unsplash.com/photo-1556228720-195a672e8a03"
     },
     inStock: true,
     featured: false
@@ -274,8 +274,8 @@ export const Accesories : accesory[] = [
     price: 50,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3"
+      img1: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
+      img2: "https://images.unsplash.com/photo-1544816155-12df9643f363"
     },
     inStock: true,
     featured: false
@@ -287,7 +287,7 @@ export const Accesories : accesory[] = [
     category: "Laces",
     price: 12,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+      img: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
       img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
       img2: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3"
     },
@@ -302,8 +302,8 @@ export const Accesories : accesory[] = [
     price: 18,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      img1: "https://images.unsplash.com/photo-1631888206126-d62193e6c0c2",
+      img2: "https://images.unsplash.com/photo-1582966772680-860e372bb558"
     },
     inStock: true,
     featured: false
@@ -316,8 +316,8 @@ export const Accesories : accesory[] = [
     price: 28,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+      img1: "https://images.unsplash.com/photo-1585238342024-78d387f4a707",
+      img2: "https://images.unsplash.com/photo-1556228720-195a672e8a03"
     },
     inStock: true,
     featured: true
@@ -329,9 +329,9 @@ export const Accesories : accesory[] = [
     category: "Hats",
     price: 24,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
-      img1: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b",
-      img2: "https://images.unsplash.com/photo-1521369984180-86565a04d35f"
+      img: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990",
+      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
+      img2: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9"
     },
     inStock: true,
     featured: false
@@ -343,9 +343,9 @@ export const Accesories : accesory[] = [
     category: "Bags",
     price: 32,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
-      img1: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
-      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+      img: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
+      img1: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+      img2: "https://images.unsplash.com/photo-1544816155-12df9643f363"
     },
     inStock: true,
     featured: false
@@ -357,9 +357,9 @@ export const Accesories : accesory[] = [
     category: "Laces",
     price: 7,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06"
+      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
+      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
+      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2"
     },
     inStock: true,
     featured: false
@@ -371,9 +371,9 @@ export const Accesories : accesory[] = [
     category: "Insoles",
     price: 48,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb",
+      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
     },
     inStock: true,
     featured: true
@@ -385,9 +385,9 @@ export const Accesories : accesory[] = [
     category: "Socks",
     price: 30,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
-      img1: "https://images.unsplash.com/photo-1539185441755-769473a23570",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img: "https://images.unsplash.com/photo-1631888206126-d62193e6c0c2",
+      img1: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
+      img2: "https://images.unsplash.com/photo-1582966772680-860e372bb558"
     },
     inStock: true,
     featured: true
@@ -399,9 +399,9 @@ export const Accesories : accesory[] = [
     category: "Shoe Care",
     price: 14,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3"
+      img: "https://images.unsplash.com/photo-1556228720-195a672e8a03",
+      img1: "https://images.unsplash.com/photo-1585238342024-78d387f4a707",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5"
     },
     inStock: true,
     featured: false
@@ -413,8 +413,8 @@ export const Accesories : accesory[] = [
     category: "Bags",
     price: 25,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
+      img: "https://images.unsplash.com/photo-1544816155-12df9643f363",
+      img1: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
       img2: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3"
     },
     inStock: true,
@@ -429,7 +429,7 @@ export const Accesories : accesory[] = [
     imageUrl: {
       img: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b",
       img1: "https://images.unsplash.com/photo-1521369984180-86565a04d35f",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06"
+      img2: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9"
     },
     inStock: true,
     featured: true
@@ -441,9 +441,9 @@ export const Accesories : accesory[] = [
     category: "Shoe Care",
     price: 16,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-      img2: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9"
+      img: "https://images.unsplash.com/photo-1585238342024-78d387f4a707",
+      img1: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+      img2: "https://images.unsplash.com/photo-1556228720-195a672e8a03"
     },
     inStock: true,
     featured: false
@@ -455,9 +455,9 @@ export const Accesories : accesory[] = [
     category: "Shoe Care",
     price: 22,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+      img1: "https://images.unsplash.com/photo-1585238342024-78d387f4a707",
+      img2: "https://images.unsplash.com/photo-1556228720-195a672e8a03"
     },
     inStock: true,
     featured: false
@@ -470,7 +470,7 @@ export const Accesories : accesory[] = [
     price: 9,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
-      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
       img2: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3"
     },
     inStock: true,
@@ -483,9 +483,9 @@ export const Accesories : accesory[] = [
     category: "Socks",
     price: 15,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
-      img1: "https://images.unsplash.com/photo-1539185441755-769473a23570",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img: "https://images.unsplash.com/photo-1582966772680-860e372bb558",
+      img1: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
+      img2: "https://images.unsplash.com/photo-1631888206126-d62193e6c0c2"
     },
     inStock: true,
     featured: false
@@ -497,8 +497,8 @@ export const Accesories : accesory[] = [
     category: "Hats",
     price: 30,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b",
-      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
+      img: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9",
+      img1: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b",
       img2: "https://images.unsplash.com/photo-1521369984180-86565a04d35f"
     },
     inStock: false,
@@ -513,7 +513,7 @@ export const Accesories : accesory[] = [
     imageUrl: {
       img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
       img1: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
-      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+      img2: "https://images.unsplash.com/photo-1544816155-12df9643f363"
     },
     inStock: true,
     featured: false
@@ -526,8 +526,8 @@ export const Accesories : accesory[] = [
     price: 18,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img1: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
     },
     inStock: true,
     featured: false
@@ -539,9 +539,9 @@ export const Accesories : accesory[] = [
     category: "Shoe Care",
     price: 20,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3"
+      img: "https://images.unsplash.com/photo-1585238342024-78d387f4a707",
+      img1: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+      img2: "https://images.unsplash.com/photo-1556228720-195a672e8a03"
     },
     inStock: true,
     featured: false
@@ -553,8 +553,8 @@ export const Accesories : accesory[] = [
     category: "Bags",
     price: 75,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
+      img: "https://images.unsplash.com/photo-1544816155-12df9643f363",
+      img1: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
       img2: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3"
     },
     inStock: true,
@@ -567,7 +567,7 @@ export const Accesories : accesory[] = [
     category: "Laces",
     price: 11,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+      img: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
       img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
       img2: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3"
     },
@@ -582,8 +582,8 @@ export const Accesories : accesory[] = [
     price: 16,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      img1: "https://images.unsplash.com/photo-1631888206126-d62193e6c0c2",
+      img2: "https://images.unsplash.com/photo-1582966772680-860e372bb558"
     },
     inStock: true,
     featured: false
@@ -595,9 +595,9 @@ export const Accesories : accesory[] = [
     category: "Shoe Care",
     price: 10,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+      img: "https://images.unsplash.com/photo-1556228720-195a672e8a03",
+      img1: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+      img2: "https://images.unsplash.com/photo-1585238342024-78d387f4a707"
     },
     inStock: true,
     featured: false
@@ -611,7 +611,7 @@ export const Accesories : accesory[] = [
     imageUrl: {
       img: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b",
       img1: "https://images.unsplash.com/photo-1521369984180-86565a04d35f",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06"
+      img2: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9"
     },
     inStock: true,
     featured: false
@@ -623,9 +623,9 @@ export const Accesories : accesory[] = [
     category: "Bags",
     price: 28,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
-      img1: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
-      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+      img: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
+      img1: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+      img2: "https://images.unsplash.com/photo-1544816155-12df9643f363"
     },
     inStock: true,
     featured: false
@@ -637,9 +637,9 @@ export const Accesories : accesory[] = [
     category: "Laces",
     price: 12,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
+      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
+      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2"
     },
     inStock: true,
     featured: false
@@ -652,8 +652,8 @@ export const Accesories : accesory[] = [
     price: 45,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img1: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
     },
     inStock: true,
     featured: false
@@ -665,9 +665,9 @@ export const Accesories : accesory[] = [
     category: "Socks",
     price: 26,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
-      img1: "https://images.unsplash.com/photo-1539185441755-769473a23570",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img: "https://images.unsplash.com/photo-1631888206126-d62193e6c0c2",
+      img1: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
+      img2: "https://images.unsplash.com/photo-1582966772680-860e372bb558"
     },
     inStock: true,
     featured: false
@@ -679,9 +679,9 @@ export const Accesories : accesory[] = [
     category: "Shoe Care",
     price: 15,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+      img: "https://images.unsplash.com/photo-1585238342024-78d387f4a707",
+      img1: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+      img2: "https://images.unsplash.com/photo-1556228720-195a672e8a03"
     },
     inStock: true,
     featured: false
@@ -694,8 +694,8 @@ export const Accesories : accesory[] = [
     price: 42,
     imageUrl: {
       img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3"
+      img1: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
+      img2: "https://images.unsplash.com/photo-1544816155-12df9643f363"
     },
     inStock: true,
     featured: false
@@ -707,11 +707,11 @@ export const Accesories : accesory[] = [
     category: "Hats",
     price: 32,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b",
-      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
+      img: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9",
+      img1: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b",
       img2: "https://images.unsplash.com/photo-1521369984180-86565a04d35f"
     },
     inStock: true,
     featured: true
   }
-]
+];

@@ -13,6 +13,11 @@ import Kids_Detail from "../shop/kids/Kids_Detail.vue";
 import Brands_Detail from "../shop/brands/Brands_Detail.vue";
 import Accesory_Detail from "../shop/accesory/Accesory_Detail.vue";
 import Sales_Detail from "../shop/sales/Sales_Detail.vue";
+import Login from "../shop/Profile/Login.vue";
+import Signup from "../shop/Profile/Signup.vue";
+import Account from "../shop/Profile/Account.vue";
+import Cart from "../shop/Cart/Cart.vue";
+import Search from "../layout/Search.vue";
 
 
 const routes =[
@@ -45,28 +50,53 @@ const routes =[
         component:Sales
     },
     {
-        path:'/manD:id',
+        path:'/manD/:id',
         component:Man_Detail
     },
     {
-        path:'/womanD:id',
+        path:'/womanD/:id',
         component:Woman_Detail
     },
     {
-        path:'/kidD:id',
+        path:'/kidD/:id',
         component:Kids_Detail
     },
     {
-        path:'/brandD:id',
+        path:'/brandD/:id',
         component:Brands_Detail
     },
     {
-        path:'/accesoryD:id',
+        path:'/accesoryD/:id',
         component:Accesory_Detail
     },
     {
-        path:'/SaleD:id',
+        path:'/SaleD/:id',
         component:Sales_Detail
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: Login
+    },
+    {
+        path: '/signup',
+        name: 'Signup',
+        component: Signup
+    },
+    {
+        path: '/account',
+        name: 'Account',
+        component: Account
+    },
+    {
+        path: '/cart',
+        name: 'Cart',
+        component:Cart
+    },
+    {
+        path: '/search',
+        name: 'search',
+        component:Search 
     }
 ]
 

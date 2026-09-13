@@ -1,19 +1,19 @@
-export interface Shoe_man{
-    id:number
-    title : string 
-    brand:string
-    category: 'Running' | 'Casual' | 'Basketball' | 'Formal' | 'Skate';
-    price :number
-    imageUrl: {
-        img:string
-        img1 :string
-        img2:string
-    };
-    sizes: number[];
-    inStock: boolean;
+export interface Shoe_man {
+  id: number;
+  title: string;
+  brand: string;
+  category: 'Running' | 'Casual' | 'Basketball' | 'Formal' | 'Skate';
+  price: number;
+  imageUrl: {
+    img: string;
+    img1: string;
+    img2: string;
+  };
+  sizes: number[];
+  inStock: boolean;
 }
 
-export const Man_Type : Shoe_man[] = [
+export const Man_Type: Shoe_man[] = [
   {
     id: 1,
     title: "Air Force 1 '07",
@@ -21,9 +21,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 115,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06"
+      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 10.5, 11],
     inStock: true
@@ -35,9 +35,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 190,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
-      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+      img: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7.5, 8, 9, 9.5, 10, 11, 12],
     inStock: true
@@ -49,9 +49,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Basketball",
     price: 180,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3",
-      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
-      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2"
+      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 9, 10, 10.5, 11, 12],
     inStock: true
@@ -63,9 +63,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 90,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1539185441755-769473a23570",
-      img1: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111",
-      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86"
+      img: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 11],
     inStock: true
@@ -77,9 +77,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 75,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7, 8, 8.5, 9, 10, 10.5],
     inStock: true
@@ -91,9 +91,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Skate",
     price: 70,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 11, 12],
     inStock: true
@@ -105,9 +105,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 65,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06"
+      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7, 8, 9, 10, 11, 12],
     inStock: true
@@ -119,9 +119,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 160,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8.5, 9, 9.5, 10, 10.5, 11],
     inStock: true
@@ -133,9 +133,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 145,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img2: "https://images.unsplash.com/photo-1539185441755-769473a23570"
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 9, 9.5, 10, 11, 12],
     inStock: true
@@ -147,9 +147,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Formal",
     price: 150,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4",
-      img1: "https://images.unsplash.com/photo-1533867617858-e7b97e060509",
-      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+      img: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 10, 10.5, 11],
     inStock: false
@@ -161,9 +161,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 130,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
-      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      img: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 11, 12],
     inStock: true
@@ -175,9 +175,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 100,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
-      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
-      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86"
+      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7.5, 8, 8.5, 9, 10, 10.5],
     inStock: true
@@ -189,9 +189,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Basketball",
     price: 200,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
-      img1: "https://images.unsplash.com/photo-1552346154-21d32810aba3",
-      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2"
+      img: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [9, 9.5, 10, 10.5, 11, 12, 13],
     inStock: true
@@ -203,9 +203,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 200,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111",
-      img1: "https://images.unsplash.com/photo-1539185441755-769473a23570",
-      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+      img: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 10, 10.5, 11],
     inStock: true
@@ -217,9 +217,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 110,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img1: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86"
+      img: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 9, 9.5, 10, 11],
     inStock: true
@@ -231,9 +231,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Formal",
     price: 130,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1533867617858-e7b97e060509",
-      img1: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4",
-      img2: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3"
+      img: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10],
     inStock: true
@@ -245,9 +245,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Skate",
     price: 115,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634",
-      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-      img2: "https://images.unsplash.com/photo-1552346154-21d32810aba3"
+      img: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 10, 10.5, 11],
     inStock: false
@@ -259,9 +259,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Basketball",
     price: 130,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
-      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
-      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+      img: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8.5, 9, 9.5, 10, 11, 12],
     inStock: true
@@ -273,9 +273,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 140,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 10.5, 11],
     inStock: true
@@ -287,9 +287,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Formal",
     price: 120,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img2: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9"
+      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 9, 10, 10.5, 11],
     inStock: true
@@ -301,9 +301,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 130,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
-      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 10.5, 11, 12],
     inStock: true
@@ -315,9 +315,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 120,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
-      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7.5, 8, 8.5, 9, 9.5, 10, 11],
     inStock: true
@@ -329,9 +329,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Basketball",
     price: 210,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3",
-      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
-      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2"
+      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 10.5, 11, 12],
     inStock: false
@@ -343,9 +343,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 165,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1539185441755-769473a23570",
-      img1: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111",
-      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86"
+      img: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 10, 10.5, 11, 12],
     inStock: true
@@ -357,9 +357,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 90,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7, 8, 8.5, 9, 10, 11],
     inStock: true
@@ -371,9 +371,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Skate",
     price: 80,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 10.5, 11],
     inStock: true
@@ -385,9 +385,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 90,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06"
+      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7, 8, 8.5, 9, 9.5, 10, 11],
     inStock: true
@@ -399,9 +399,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 160,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 10.5, 11, 12],
     inStock: true
@@ -413,9 +413,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 165,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img2: "https://images.unsplash.com/photo-1539185441755-769473a23570"
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 9, 9.5, 10, 10.5, 11, 12],
     inStock: true
@@ -427,9 +427,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 170,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1533867617858-e7b97e060509",
-      img1: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4",
-      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+      img: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7, 8, 9, 10, 11, 12],
     inStock: true
@@ -441,9 +441,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 110,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
-      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img2: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9"
+      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 9, 10, 11, 12],
     inStock: true
@@ -455,9 +455,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 50,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7, 8, 9, 10, 11, 12, 13],
     inStock: true
@@ -469,9 +469,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 180,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4",
-      img1: "https://images.unsplash.com/photo-1533867617858-e7b97e060509",
-      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+      img: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7, 8, 9, 10, 11],
     inStock: true
@@ -483,9 +483,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 198,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
-      img2: "https://images.unsplash.com/photo-1533867617858-e7b97e060509"
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 11, 12],
     inStock: true
@@ -497,9 +497,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 90,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
-      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
-      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [7.5, 8, 8.5, 9, 10, 10.5, 11],
     inStock: true
@@ -511,9 +511,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 170,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 11],
     inStock: true
@@ -525,9 +525,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 90,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
-      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 11, 12],
     inStock: true
@@ -539,9 +539,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Basketball",
     price: 160,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3",
-      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
-      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2"
+      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8.5, 9, 9.5, 10, 10.5, 11, 12],
     inStock: true
@@ -553,9 +553,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 140,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img1: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111",
-      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 10.5, 11, 12],
     inStock: true
@@ -567,9 +567,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 170,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1539185441755-769473a23570",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111"
+      img: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 10, 10.5, 11],
     inStock: true
@@ -581,9 +581,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 140,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8.5, 9, 9.5, 10, 11, 12],
     inStock: true
@@ -595,9 +595,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Running",
     price: 120,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img2: "https://images.unsplash.com/photo-1539185441755-769473a23570"
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 10, 10.5, 11, 12],
     inStock: true
@@ -609,9 +609,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Formal",
     price: 140,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4",
-      img1: "https://images.unsplash.com/photo-1533867617858-e7b97e060509",
-      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+      img: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 9, 10, 10.5, 11, 12],
     inStock: true
@@ -623,9 +623,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Skate",
     price: 75,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 11],
     inStock: true
@@ -637,9 +637,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Skate",
     price: 85,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
-      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 10, 10.5, 11],
     inStock: true
@@ -651,9 +651,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 75,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
-      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 9, 10, 11, 12],
     inStock: true
@@ -665,9 +665,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 185,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1533867617858-e7b97e060509",
-      img1: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4",
-      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+      img: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 9, 10, 10.5, 11],
     inStock: true
@@ -679,9 +679,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 1050,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [39, 40, 41, 42, 43, 44],
     inStock: false
@@ -693,9 +693,9 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 850,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06"
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 10, 10.5, 11],
     inStock: true
@@ -707,11 +707,11 @@ export const Man_Type : Shoe_man[] = [
     category: "Casual",
     price: 310,
     imageUrl: {
-      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3",
-      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842",
-      img2: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634"
+      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [8, 8.5, 9, 9.5, 10, 11, 12],
     inStock: true
   }
-]
+];
