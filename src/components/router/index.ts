@@ -4,8 +4,6 @@ import Home from "../shop/Home.vue";
 import Man from "../shop/man/Man.vue";
 import Woman from "../shop/women/Woman.vue";
 import Kids from "../shop/kids/Kids.vue";
-import Brands from "../shop/brands/Brands.vue";
-import Accesories from "../shop/accesory/Accesories.vue";
 import Sales from "../shop/sales/Sales.vue";
 import Man_Detail from "../shop/man/Man_Detail.vue";
 import Woman_Detail from "../shop/women/Woman_Detail.vue";
@@ -18,9 +16,21 @@ import Signup from "../shop/Profile/Signup.vue";
 import Account from "../shop/Profile/Account.vue";
 import Cart from "../shop/Cart/Cart.vue";
 import Search from "../layout/Search.vue";
+import Accesories from "../shop/accesory/Accesories.vue";
+import Brands from "../shop/brands/Brands.vue";
+import Checkout from "../shop/Checkout.vue";
 
 
-const routes =[
+const router = createRouter({
+    history:createWebHistory(),
+    routes:[{
+         path: '/accesories',
+        component: Accesories
+    },
+    {
+        path:'/brands',
+        component:Brands
+    },
     {
         path:'/',
         component:Home
@@ -36,14 +46,6 @@ const routes =[
     {
         path:'/kids',
         component:Kids
-    },
-    {
-        path:'/brands',
-        component:Brands
-    },
-    {
-        path:'/accesory',
-        component:Accesories
     },
     {
         path:'/sales',
@@ -97,12 +99,13 @@ const routes =[
         path: '/search',
         name: 'search',
         component:Search 
+    },
+    {
+      path: '/checkout',
+      name: 'Checkout',
+      component:Checkout
     }
 ]
-
-const router = createRouter({
-    history:createWebHistory(),
-    routes
 })
 
 export default router;

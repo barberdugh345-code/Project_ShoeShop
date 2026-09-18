@@ -1,107 +1,145 @@
 <template>
   <div class="category-page min-h-screen bg-white">
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
 
       <!-- Page Header -->
-      <header class="mb-8">
-        <h1 class="text-3xl font-extrabold uppercase tracking-wide text-gray-900 mb-2">
-          Our Brands
+      <header class="mb-6 sm:mb-8 text-center sm:text-left">
+        <h1 class="text-2xl sm:text-3xl font-extrabold uppercase tracking-wide text-gray-900 mb-2">
+          Kids' Shoes & Sneakers
         </h1>
-        <p class="text-gray-500 text-base">
-          Explore our complete collection of top footwear brands.
+        <p class="text-gray-500 text-sm sm:text-base">
+          Durable, comfortable, and trendy footwear for active kids.
         </p>
       </header>
 
-      <!-- Filter & Sort Bar -->
-      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-gray-200 pb-4 mb-6 gap-4">
-        <div class="text-sm text-gray-500 font-medium">
-          Showing <span class="font-bold text-gray-900">{{ filteredBrands.length }}</span> brands
+      <!-- Filter / Sort Bar -->
+      <div class="flex flex-col sm:flex-row justify-between items-stretch sm:items-center border-b border-gray-200 pb-4 mb-6 gap-3 sm:gap-4">
+        <div class="text-xs sm:text-sm text-gray-500 font-medium text-center sm:text-left">
+          Showing <span class="font-bold text-gray-900">{{ filteredProducts.length }}</span> products
         </div>
 
-        <div class="flex flex-wrap items-center gap-4">
-          <input
-            v-model="searchQuery"
-            type="text"
-            placeholder="Search brands or countries..."
-            class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-md focus:ring-black focus:border-black p-2.5 outline-none w-48 sm:w-64"
-          />
+        <div class="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-2 sm:gap-4">
+          <select
+            v-model="selectedCategory"
+            class="w-full sm:w-auto bg-gray-50 border border-gray-300 text-gray-700 text-xs sm:text-sm rounded-md focus:ring-black focus:border-black p-2 sm:p-2.5 outline-none"
+          >
+            <option value="All">All Categories</option>
+            <option v-for="cat in categories" :key="cat" :value="cat">
+              {{ cat }}
+            </option>
+          </select>
 
           <select
             v-model="sortBy"
-            class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-md focus:ring-black focus:border-black p-2.5 outline-none cursor-pointer"
+            class="w-full sm:w-auto bg-gray-50 border border-gray-300 text-gray-700 text-xs sm:text-sm rounded-md focus:ring-black focus:border-black p-2 sm:p-2.5 outline-none"
           >
-            <option value="featured">Featured First</option>
-            <option value="name-asc">Name (A-Z)</option>
-            <option value="name-desc">Name (Z-A)</option>
+            <option value="featured">Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
           </select>
         </div>
       </div>
 
       <!-- Empty State -->
-      <div v-if="filteredBrands.length === 0" class="text-center py-16">
-        <p class="text-gray-500 text-lg">No brands found matching your search.</p>
+      <div v-if="filteredProducts.length === 0" class="text-center py-12 sm:py-16">
+        <p class="text-gray-500 text-base sm:text-lg">No kids' products found matching your criteria.</p>
         <button
           @click="resetFilters"
-          class="mt-4 px-4 py-2 bg-black text-white text-sm font-semibold rounded hover:bg-gray-800 transition cursor-pointer"
+          class="mt-4 px-4 py-2 bg-black text-white text-xs sm:text-sm font-semibold rounded hover:bg-gray-800 transition min-h-[44px] sm:min-h-0"
         >
-          Reset Search
+          Reset Filters
         </button>
       </div>
 
-      <!-- Brands Grid -->
-      <div v-else class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Product Grid -->
+      <div v-else class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
         <div
-          v-for="item in filteredBrands"
+          v-for="item in filteredProducts"
           :key="item.id"
-          class="group bg-white border border-gray-200 rounded-lg overflow-hidden flex flex-col hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          class="group relative bg-white border border-gray-200 rounded-lg overflow-hidden flex flex-col justify-between hover:shadow-lg transition-shadow duration-300"
         >
-          <!-- Logo -->
-          <div class="relative w-full h-64 bg-stone-50 border-b border-gray-100 flex items-center justify-center overflow-hidden group-hover:bg-gray-100 transition-colors">
+          <!-- Image -->
+          <div class="relative w-full aspect-square bg-gray-100 overflow-hidden">
             <img
-              :src="item.logoUrl?.logo || getBrandFallbackImage(item.name)"
-              :alt="item.name"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              @error="onImageError"
+              :src="getImageUrl(item)"
+              :alt="item.title"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
             />
 
             <span
-              v-if="item.featured"
-              class="absolute top-3 right-3 z-10 bg-red-600 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded tracking-wider shadow-sm"
+              v-if="!item.inStock"
+              class="absolute top-1.5 left-1.5 sm:top-2 sm:left-2 bg-red-600 text-white text-[10px] sm:text-xs font-bold uppercase px-1.5 py-0.5 sm:px-2 sm:py-1 rounded"
             >
-              Featured
+              Out of Stock
             </span>
           </div>
 
-          <!-- Brand Info -->
-          <div class="p-5 flex flex-col flex-grow text-center">
-            <h3 class="text-xl font-black text-gray-900 group-hover:text-red-600 transition-colors mb-1 uppercase tracking-tight">
-              {{ item.name }}
-            </h3>
-
-            <p v-if="item.country" class="text-xs text-gray-400 font-medium mb-3">
-              Established in {{ item.country }}
+          <!-- Product Info -->
+          <div class="p-2.5 sm:p-4 flex flex-col flex-grow">
+            <p class="text-[10px] sm:text-xs font-semibold text-gray-400 uppercase tracking-wider mb-0.5 sm:mb-1">
+              {{ item.category }}
             </p>
 
-            <!-- Categories -->
-            <div v-if="item.categories?.length" class="flex flex-wrap justify-center gap-1.5 mb-5">
-              <span
-                v-for="(category, index) in formatCategories(item.categories)"
-                :key="index"
-                class="text-[11px] font-semibold bg-gray-100 text-gray-600 px-2.5 py-0.5 rounded-full"
-              >
-                {{ category }}
+            <h3 class="text-xs sm:text-sm font-bold text-gray-900 group-hover:text-red-600 transition-colors line-clamp-2 sm:line-clamp-1 mb-1">
+              {{ item.title }}
+            </h3>
+
+            <!-- Sizes -->
+            <div v-if="item.sizes && item.sizes.length" class="mb-2 sm:mb-3">
+              <span class="text-[9px] sm:text-[11px] text-gray-400 uppercase font-semibold block mb-0.5 sm:mb-1">Available Sizes:</span>
+              <div class="flex flex-wrap gap-1 max-h-12 overflow-hidden">
+                <span
+                  v-for="size in item.sizes"
+                  :key="size"
+                  class="text-[9px] sm:text-[10px] font-medium border border-gray-200 rounded px-1 sm:px-1.5 py-0.5 bg-gray-50 text-gray-700"
+                >
+                  {{ size }}
+                </span>
+              </div>
+            </div>
+
+            <!-- Price -->
+            <div class="mt-auto pt-1.5 sm:pt-2 border-t border-gray-100">
+              <span class="text-base sm:text-lg font-extrabold text-gray-900">
+                ${{ Number(item.price).toFixed(2) }}
               </span>
             </div>
 
             <!-- Buttons -->
-            <div class="mt-auto flex flex-col gap-2">
-              <!-- More Details Button -->
-              <router-link
-                :to="`/brandD/${item.id}`"
-                class="w-full py-2.5 px-4 bg-black text-white text-xs font-bold uppercase tracking-wider rounded hover:bg-red-600 transition-colors shadow-sm text-center"
+            <div class="mt-2 sm:mt-3 flex flex-col gap-1.5 sm:gap-2">
+              <!-- Buy Now -->
+              <button
+                :disabled="!item.inStock"
+                @click="handleBuyNow(item)"
+                class="w-full min-h-[38px] px-2 py-2 text-[11px] sm:text-xs font-bold uppercase rounded transition-colors flex items-center justify-center"
+                :class="item.inStock
+                  ? 'bg-red-600 text-white hover:bg-red-700'
+                  : 'bg-gray-200 text-gray-400 cursor-not-allowed'"
               >
-                More Details
-              </router-link>
+                Buy Now
+              </button>
+
+              <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
+                <!-- Add to Bag -->
+                <button
+                  :disabled="!item.inStock"
+                  @click="handleAddToCart(item)"
+                  class="w-full min-h-[38px] px-2 py-2 text-[11px] sm:text-xs font-bold uppercase rounded transition-colors flex items-center justify-center"
+                  :class="item.inStock
+                    ? 'bg-black text-white hover:bg-gray-800'
+                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'"
+                >
+                  {{ item.inStock ? 'Add to Bag' : 'Sold Out' }}
+                </button>
+
+                <!-- Details -->
+                <router-link
+                  :to="`/kidD/${item.id}`"
+                  class="w-full min-h-[38px] px-2 py-2 text-[11px] sm:text-xs font-bold uppercase rounded border border-gray-300 text-center text-gray-700 hover:bg-gray-100 transition flex items-center justify-center"
+                >
+                  Details
+                </router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -112,59 +150,100 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { useRoute } from 'vue-router';
-import { BRANDS_DATA, type ShoeBrand, type Category } from '../../../data/Brands';
+import { useRoute, useRouter } from 'vue-router';
+import { Kids_Types, type Shoe_kids } from '../../../data/Kids';
+import { useCart } from '../../../composables/useCart';
 
+const { addToCart } = useCart();
 const route = useRoute();
+const router = useRouter();
 
-const searchQuery = ref<string>('');
-const sortBy = ref<'featured' | 'name-asc' | 'name-desc'>('featured');
+const selectedCategory = ref<string>('All');
+const sortBy = ref<string>('featured');
 
-const formatCategories = (categories: Category[] | string): string[] => {
-  if (Array.isArray(categories)) return categories;
-  if (typeof categories === 'string') return categories.split(',').map(c => c.trim());
-  return [];
-};
+const categories = computed(() => {
+  return Array.from(new Set(Kids_Types.map(item => item.category).filter(Boolean)));
+});
 
-const getBrandFallbackImage = (brandName: string): string => {
-  return `https://via.placeholder.com/300x150/ffffff/000000?text=${encodeURIComponent(brandName)}`;
-};
+const getImageUrl = (product: any): string => {
+  const fallback = 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80';
+  if (!product) return fallback;
 
-const onImageError = (event: Event) => {
-  const target = event.target as HTMLImageElement;
-  target.src = 'https://via.placeholder.com/300x150/ffffff/000000?text=Brand';
-};
+  const target = product.images || product.imageUrl;
+  if (!target) return fallback;
 
-const filteredBrands = computed<ShoeBrand[]>(() => {
-  let result = [...BRANDS_DATA];
+  if (typeof target === 'string') return target;
+  if (Array.isArray(target) && target.length > 0) return target[0];
 
-  // 🔍 Search from navbar OR local input
-  const q = (
-    (route.query.q as string) ||
-    searchQuery.value ||
-    ''
-  ).toLowerCase().trim();
-
-  if (q) {
-    result = result.filter(item =>
-      item.name.toLowerCase().includes(q) ||
-      (item.country && item.country.toLowerCase().includes(q))
-    );
+  if (typeof target === 'object') {
+    return target.img || target.img1 || (Object.values(target)[0] as string) || fallback;
   }
 
-  if (sortBy.value === 'name-asc') {
-    result.sort((a, b) => a.name.localeCompare(b.name));
-  } else if (sortBy.value === 'name-desc') {
-    result.sort((a, b) => b.name.localeCompare(a.name));
-  } else if (sortBy.value === 'featured') {
-    result.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+  return fallback;
+};
+
+const filteredProducts = computed(() => {
+  let result = [...Kids_Types];
+
+  // Search filter
+  const q = ((route.query.q as string) || '').toLowerCase().trim();
+  if (q) {
+    result = result.filter(item => {
+      const title = item.title?.toLowerCase() || '';
+      const brand = item.brand?.toLowerCase() || '';
+      const category = item.category?.toLowerCase() || '';
+      return title.includes(q) || brand.includes(q) || category.includes(q);
+    });
+  }
+
+  // Category filter
+  if (selectedCategory.value !== 'All') {
+    result = result.filter(item => item.category === selectedCategory.value);
+  }
+
+  // Sorting
+  if (sortBy.value === 'price-low') {
+    result.sort((a, b) => Number(a.price) - Number(b.price));
+  } else if (sortBy.value === 'price-high') {
+    result.sort((a, b) => Number(b.price) - Number(a.price));
   }
 
   return result;
 });
 
 const resetFilters = () => {
-  searchQuery.value = '';
+  selectedCategory.value = 'All';
   sortBy.value = 'featured';
 };
+
+function handleAddToCart(product: Shoe_kids) {
+  if (!product.inStock) return;
+
+  addToCart({
+    id: `kids-${product.id}`,
+    title: product.title,
+    brand: product.brand || 'Famous Footwear',
+    price: Number(product.price),
+    image: getImageUrl(product),
+    type: 'Kids',
+    quantity: 1
+  } as any);
+}
+
+function handleBuyNow(product: Shoe_kids) {
+  if (!product.inStock) return;
+
+  const buyNowItem = {
+    id: `kids-${product.id}`,
+    title: product.title,
+    brand: product.brand || 'Famous Footwear',
+    price: Number(product.price),
+    image: getImageUrl(product),
+    quantity: 1,
+    type: 'Kids'
+  };
+
+  localStorage.setItem('famous_footwear_buynow', JSON.stringify(buyNowItem));
+  router.push('/checkout');
+}
 </script>
