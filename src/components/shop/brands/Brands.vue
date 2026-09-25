@@ -112,7 +112,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { BRANDS_DATA, type Category } from '../../../data/Brands';
-import Brands_Detail from './Brands_Detail.vue';
 
 const selectedCategory = ref('All');
 const filterType = ref('all');
