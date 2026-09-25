@@ -16,248 +16,248 @@ export interface Shoe_kids {
 export const Kids_Types: Shoe_kids[] = [
   {
     id: 1,
-    title: "Air Force 1 '07",
+    title: "Air Force 1 Kids",
     brand: "Nike",
-    category: "Casual",
-    price: 115,
-    images: {
-      img: "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?auto=format&fit=crop&w=800&q=80"
-    },
-    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
-    inStock: true
-  },
-  {
-    id: 2,
-    title: "Ultraboost Light",
-    brand: "Adidas",
-    category: "Running",
-    price: 190,
-    images: {
-      img: "https://images.unsplash.com/photo-1584590039416-81da9ed27568?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
-    },
-    sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5],
-    inStock: true
-  },
-  {
-    id: 3,
-    title: "574 Core",
-    brand: "New Balance",
     category: "Casual",
     price: 90,
     images: {
-      img: "https://images.unsplash.com/photo-1507464098880-e367bc5d2c08?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80"
-    },
-    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 10],
-    inStock: true
-  },
-  {
-    id: 4,
-    title: "Clifton 9",
-    brand: "Hoka",
-    category: "Running",
-    price: 145,
-    images: {
-      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80"
-    },
-    sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5],
-    inStock: true
-  },
-  {
-    id: 5,
-    title: "Cloud 5",
-    brand: "On Running",
-    category: "Running",
-    price: 140,
-    images: {
-      img: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80"
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
     inStock: true
   },
   {
+    id: 2,
+    title: "Ultraboost Kids",
+    brand: "Adidas",
+    category: "Running",
+    price: 110,
+    images: {
+      img: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5],
+    inStock: true
+  },
+  {
+    id: 3,
+    title: "574 Kids",
+    brand: "New Balance",
+    category: "Casual",
+    price: 75,
+    images: {
+      img: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 4,
+    title: "Clifton 9 Kids",
+    brand: "Hoka",
+    category: "Running",
+    price: 100,
+    images: {
+      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 5,
+    title: "Cloud 5 Kids",
+    brand: "On Running",
+    category: "Running",
+    price: 95,
+    images: {
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5],
+    inStock: true
+  },
+  {
     id: 6,
-    title: "Cali Star Sneaker",
+    title: "Cali Star Kids",
     brand: "Puma",
     category: "Casual",
-    price: 80,
+    price: 65,
     images: {
-      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?auto=format&fit=crop&w=800&q=80"
+      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
     },
-    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5],
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8],
     inStock: true
   },
   {
     id: 7,
-    title: "Classic Platform Clog",
+    title: "Classic Clog Kids",
     brand: "Crocs",
     category: "Sandals",
-    price: 60,
+    price: 45,
     images: {
-      img: "https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=800&q=80"
-    },
-    sizes: [6, 7, 8, 9, 10, 11],
-    inStock: true
-  },
-  {
-    id: 8,
-    title: "Air Jordan 1 Elevate Low",
-    brand: "Jordan",
-    category: "Basketball",
-    price: 135,
-    images: {
-      img: "https://images.unsplash.com/photo-1607861716497-e65ab29fc7ac?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
-    },
-    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5],
-    inStock: true
-  },
-  {
-    id: 9,
-    title: "Metcon 9 Training",
-    brand: "Nike",
-    category: "Running",
-    price: 150,
-    images: {
-      img: "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1588117305388-c2631a279f82?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80"
-    },
-    sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
-    inStock: true
-  },
-  {
-    id: 10,
-    title: "GEL-KAYANO 30",
-    brand: "ASICS",
-    category: "Running",
-    price: 160,
-    images: {
-      img: "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1579446565308-427218a2c60e?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1628253747716-0ce4f5c69f6a?auto=format&fit=crop&w=800&q=80"
-    },
-    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
-    inStock: true
-  },
-  {
-    id: 11,
-    title: "Classic Short II Boot",
-    brand: "UGG",
-    category: "School",
-    price: 180,
-    images: {
-      img: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&w=800&q=80"
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [5, 6, 7, 8, 9, 10, 11],
     inStock: true
   },
   {
-    id: 12,
-    title: "Chuck Taylor All Star Platform",
-    brand: "Converse",
-    category: "Casual",
-    price: 75,
-    images: {
-      img: "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1463100099107-fe0980185a68?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1528701800487-ba01fea498c0?auto=format&fit=crop&w=800&q=80"
-    },
-    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
-    inStock: true
-  },
-  {
-    id: 13,
-    title: "Arizona Soft Footbed Sandal",
-    brand: "Birkenstock",
-    category: "Sandals",
-    price: 140,
-    images: {
-      img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=800&q=80"
-    },
-    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
-    inStock: true
-  },
-  {
-    id: 14,
-    title: "Samba OG Shoes",
-    brand: "Adidas",
-    category: "Casual",
+    id: 8,
+    title: "Jordan 1 Low Kids",
+    brand: "Jordan",
+    category: "Basketball",
     price: 100,
     images: {
-      img: "https://images.unsplash.com/photo-1562183241-b937e95585b6?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1586525198428-225f6f12cff5?auto=format&fit=crop&w=800&q=80"
+      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
     },
-    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
-    inStock: false
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
   },
   {
-    id: 15,
-    title: "Free Metcon 5",
+    id: 9,
+    title: "Revolution 7 Kids",
     brand: "Nike",
     category: "Running",
-    price: 120,
+    price: 60,
     images: {
-      img: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80",
-      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 10,
+    title: "GEL-Contend 8 Kids",
+    brand: "ASICS",
+    category: "Running",
+    price: 70,
+    images: {
+      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
       img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
     },
     sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
     inStock: true
   },
   {
+    id: 11,
+    title: "Classic Mini Boot Kids",
+    brand: "UGG",
+    category: "School",
+    price: 120,
+    images: {
+      img: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 6, 7, 8, 9, 10],
+    inStock: true
+  },
+  {
+    id: 12,
+    title: "Chuck Taylor Kids",
+    brand: "Converse",
+    category: "Casual",
+    price: 50,
+    images: {
+      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 13,
+    title: "Arizona Kids Sandal",
+    brand: "Birkenstock",
+    category: "Sandals",
+    price: 80,
+    images: {
+      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 14,
+    title: "Samba Kids",
+    brand: "Adidas",
+    category: "Casual",
+    price: 70,
+    images: {
+      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 15,
+    title: "Free Run Kids",
+    brand: "Nike",
+    category: "Running",
+    price: 75,
+    images: {
+      img: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
     id: 16,
-    title: "Old Skool Stackform",
+    title: "Old Skool Kids",
     brand: "Vans",
     category: "School",
-    price: 80,
+    price: 55,
     images: {
       img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
       img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
       img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
     },
-    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5],
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
     inStock: true
   },
   {
     id: 17,
-    title: "Ghost 15",
+    title: "Ghost 15 Kids",
     brand: "Brooks",
     category: "Running",
-    price: 140,
+    price: 85,
     images: {
-      img: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
       img1: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80",
-      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
+      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
     },
-    sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11],
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5],
     inStock: true
   },
   {
     id: 18,
-    title: "Nizza Platform",
+    title: "Nizza Kids",
     brand: "Adidas",
     category: "Casual",
-    price: 75,
+    price: 55,
     images: {
       img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
       img1: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
@@ -268,30 +268,452 @@ export const Kids_Types: Shoe_kids[] = [
   },
   {
     id: 19,
-    title: "Original 1460 Leather Boots",
+    title: "1460 Kids Boot",
     brand: "Dr. Martens",
     category: "School",
-    price: 170,
+    price: 110,
     images: {
       img: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
       img1: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
       img2: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80"
     },
-    sizes: [5, 6, 7, 8, 9, 10, 11],
+    sizes: [5, 6, 7, 8, 9, 10],
     inStock: true
   },
   {
     id: 20,
-    title: "Dunk Low Next Nature",
+    title: "Dunk Low Kids",
     brand: "Nike",
     category: "Casual",
-    price: 115,
+    price: 85,
     images: {
       img: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?auto=format&fit=crop&w=800&q=80",
       img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
       img2: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80"
     },
-    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5],
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+
+  // ===== EXTRA 30 ITEMS =====
+  {
+    id: 21,
+    title: "Air Max 90 Kids",
+    brand: "Nike",
+    category: "Casual",
+    price: 95,
+    images: {
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 22,
+    title: "Gazelle Kids",
+    brand: "Adidas",
+    category: "Casual",
+    price: 70,
+    images: {
+      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5],
+    inStock: true
+  },
+  {
+    id: 23,
+    title: "Jordan 4 Kids",
+    brand: "Jordan",
+    category: "Basketball",
+    price: 120,
+    images: {
+      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: false
+  },
+  {
+    id: 24,
+    title: "Fresh Foam Kids",
+    brand: "New Balance",
+    category: "Running",
+    price: 80,
+    images: {
+      img: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 25,
+    title: "Suede Kids",
+    brand: "Puma",
+    category: "Casual",
+    price: 60,
+    images: {
+      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8],
+    inStock: true
+  },
+  {
+    id: 26,
+    title: "Sk8-Hi Kids",
+    brand: "Vans",
+    category: "School",
+    price: 60,
+    images: {
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5],
+    inStock: true
+  },
+  {
+    id: 27,
+    title: "Chuck 70 Kids",
+    brand: "Converse",
+    category: "Casual",
+    price: 65,
+    images: {
+      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 28,
+    title: "GEL-Excite Kids",
+    brand: "ASICS",
+    category: "Running",
+    price: 65,
+    images: {
+      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 29,
+    title: "Bondi Kids",
+    brand: "Hoka",
+    category: "Running",
+    price: 90,
+    images: {
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 30,
+    title: "Chelsea Boot Kids",
+    brand: "Steve Madden",
+    category: "School",
+    price: 75,
+    images: {
+      img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 6, 7, 8, 9],
+    inStock: true
+  },
+  {
+    id: 31,
+    title: "Pegasus Kids",
+    brand: "Nike",
+    category: "Running",
+    price: 80,
+    images: {
+      img: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 32,
+    title: "Forum Low Kids",
+    brand: "Adidas",
+    category: "Casual",
+    price: 75,
+    images: {
+      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5],
+    inStock: true
+  },
+  {
+    id: 33,
+    title: "LeBron Kids",
+    brand: "Nike",
+    category: "Basketball",
+    price: 100,
+    images: {
+      img: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 34,
+    title: "990 Kids",
+    brand: "New Balance",
+    category: "Running",
+    price: 110,
+    images: {
+      img: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 35,
+    title: "RS-X Kids",
+    brand: "Puma",
+    category: "Casual",
+    price: 70,
+    images: {
+      img: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8],
+    inStock: true
+  },
+  {
+    id: 36,
+    title: "Authentic Kids",
+    brand: "Vans",
+    category: "Casual",
+    price: 45,
+    images: {
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 37,
+    title: "One Star Kids",
+    brand: "Converse",
+    category: "Casual",
+    price: 55,
+    images: {
+      img: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5],
+    inStock: true
+  },
+  {
+    id: 38,
+    title: "Gel-Pulse Kids",
+    brand: "ASICS",
+    category: "Running",
+    price: 70,
+    images: {
+      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 39,
+    title: "Rincon Kids",
+    brand: "Hoka",
+    category: "Running",
+    price: 85,
+    images: {
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 40,
+    title: "Oxford Kids",
+    brand: "Clarks",
+    category: "School",
+    price: 70,
+    images: {
+      img: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 6, 7, 8, 9],
+    inStock: true
+  },
+  {
+    id: 41,
+    title: "Air Max SC Kids",
+    brand: "Nike",
+    category: "Casual",
+    price: 70,
+    images: {
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 42,
+    title: "Grand Court Kids",
+    brand: "Adidas",
+    category: "Casual",
+    price: 50,
+    images: {
+      img: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5],
+    inStock: true
+  },
+  {
+    id: 43,
+    title: "Court Borough Kids",
+    brand: "Nike",
+    category: "Casual",
+    price: 55,
+    images: {
+      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 44,
+    title: "Hurricane Kids Sandal",
+    brand: "Teva",
+    category: "Sandals",
+    price: 40,
+    images: {
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 6, 7, 8, 9, 10],
+    inStock: true
+  },
+  {
+    id: 45,
+    title: "Classic Clog Lined Kids",
+    brand: "Crocs",
+    category: "Sandals",
+    price: 50,
+    images: {
+      img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 6, 7, 8, 9, 10, 11],
+    inStock: true
+  },
+  {
+    id: 46,
+    title: "Speedcross Kids",
+    brand: "Salomon",
+    category: "Running",
+    price: 80,
+    images: {
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 47,
+    title: "Ultra Flex Kids",
+    brand: "Skechers",
+    category: "Casual",
+    price: 55,
+    images: {
+      img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 48,
+    title: "Curry Kids",
+    brand: "Under Armour",
+    category: "Basketball",
+    price: 90,
+    images: {
+      img: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
+    inStock: true
+  },
+  {
+    id: 49,
+    title: "Ghost Max Kids",
+    brand: "Brooks",
+    category: "Running",
+    price: 90,
+    images: {
+      img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5],
+    inStock: true
+  },
+  {
+    id: 50,
+    title: "Endorphin Kids",
+    brand: "Saucony",
+    category: "Running",
+    price: 85,
+    images: {
+      img: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+      img1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      img2: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80"
+    },
+    sizes: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
     inStock: true
   }
 ];

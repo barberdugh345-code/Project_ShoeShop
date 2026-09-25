@@ -1,21 +1,21 @@
 <template>
-  <div class="category-page min-h-screen bg-white">
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
+  <div class="min-h-screen bg-white">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
 
-      <!-- Page Header -->
       <header class="mb-6 sm:mb-8 text-center sm:text-left">
         <h1 class="text-2xl sm:text-3xl font-extrabold uppercase tracking-wide text-gray-900 mb-2">
-          Kids' Shoes & Sneakers
+          Shop by Brand
         </h1>
         <p class="text-gray-500 text-sm sm:text-base">
-          Durable, comfortable, and trendy footwear for active kids.
+          Explore top footwear brands from around the world.
         </p>
       </header>
 
-      <!-- Filter / Sort Bar -->
       <div class="flex flex-col sm:flex-row justify-between items-stretch sm:items-center border-b border-gray-200 pb-4 mb-6 gap-3 sm:gap-4">
         <div class="text-xs sm:text-sm text-gray-500 font-medium text-center sm:text-left">
-          Showing <span class="font-bold text-gray-900">{{ filteredProducts.length }}</span> products
+          Showing
+          <span class="font-bold text-gray-900">{{ filteredBrands.length }}</span>
+          brands
         </div>
 
         <div class="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-2 sm:gap-4">
@@ -24,122 +24,83 @@
             class="w-full sm:w-auto bg-gray-50 border border-gray-300 text-gray-700 text-xs sm:text-sm rounded-md focus:ring-black focus:border-black p-2 sm:p-2.5 outline-none"
           >
             <option value="All">All Categories</option>
-            <option v-for="cat in categories" :key="cat" :value="cat">
+            <option v-for="cat in allCategories" :key="cat" :value="cat">
               {{ cat }}
             </option>
           </select>
 
           <select
-            v-model="sortBy"
+            v-model="filterType"
             class="w-full sm:w-auto bg-gray-50 border border-gray-300 text-gray-700 text-xs sm:text-sm rounded-md focus:ring-black focus:border-black p-2 sm:p-2.5 outline-none"
           >
-            <option value="featured">Featured</option>
-            <option value="price-low">Price: Low to High</option>
-            <option value="price-high">Price: High to Low</option>
+            <option value="all">All Brands</option>
+            <option value="featured">Featured Only</option>
           </select>
         </div>
       </div>
 
-      <!-- Empty State -->
-      <div v-if="filteredProducts.length === 0" class="text-center py-12 sm:py-16">
-        <p class="text-gray-500 text-base sm:text-lg">No kids' products found matching your criteria.</p>
+      <div v-if="filteredBrands.length === 0" class="text-center py-16">
+        <p class="text-gray-500 text-base mb-4">No brands found.</p>
         <button
           @click="resetFilters"
-          class="mt-4 px-4 py-2 bg-black text-white text-xs sm:text-sm font-semibold rounded hover:bg-gray-800 transition min-h-[44px] sm:min-h-0"
+          class="px-5 py-2.5 bg-black text-white text-xs font-bold rounded-lg hover:bg-gray-800 transition"
         >
           Reset Filters
         </button>
       </div>
 
-      <!-- Product Grid -->
-      <div v-else class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+      <div v-else class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-5">
         <div
-          v-for="item in filteredProducts"
-          :key="item.id"
-          class="group relative bg-white border border-gray-200 rounded-lg overflow-hidden flex flex-col justify-between hover:shadow-lg transition-shadow duration-300"
+          v-for="brand in filteredBrands"
+          :key="brand.id"
+          class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
         >
-          <!-- Image -->
-          <div class="relative w-full aspect-square bg-gray-100 overflow-hidden">
+          <div class="relative w-full aspect-square bg-gray-50 overflow-hidden">
             <img
-              :src="getImageUrl(item)"
-              :alt="item.title"
+              :src="brand.logoUrl.logo"
+              :alt="brand.name"
               class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
             />
-
             <span
-              v-if="!item.inStock"
-              class="absolute top-1.5 left-1.5 sm:top-2 sm:left-2 bg-red-600 text-white text-[10px] sm:text-xs font-bold uppercase px-1.5 py-0.5 sm:px-2 sm:py-1 rounded"
+              v-if="brand.featured"
+              class="absolute top-2 left-2 bg-black text-white text-[9px] sm:text-[10px] font-bold uppercase px-2 py-0.5 rounded"
             >
-              Out of Stock
+              Featured
             </span>
           </div>
 
-          <!-- Product Info -->
-          <div class="p-2.5 sm:p-4 flex flex-col flex-grow">
-            <p class="text-[10px] sm:text-xs font-semibold text-gray-400 uppercase tracking-wider mb-0.5 sm:mb-1">
-              {{ item.category }}
+          <div class="p-3 sm:p-4 flex flex-col flex-grow">
+            <h3 class="text-sm sm:text-base font-extrabold text-gray-900 group-hover:text-red-600 transition-colors">
+              {{ brand.name }}
+            </h3>
+            <p class="text-[10px] sm:text-xs text-gray-400 mt-0.5 mb-2">
+              {{ brand.country }}
             </p>
 
-            <h3 class="text-xs sm:text-sm font-bold text-gray-900 group-hover:text-red-600 transition-colors line-clamp-2 sm:line-clamp-1 mb-1">
-              {{ item.title }}
-            </h3>
-
-            <!-- Sizes -->
-            <div v-if="item.sizes && item.sizes.length" class="mb-2 sm:mb-3">
-              <span class="text-[9px] sm:text-[11px] text-gray-400 uppercase font-semibold block mb-0.5 sm:mb-1">Available Sizes:</span>
-              <div class="flex flex-wrap gap-1 max-h-12 overflow-hidden">
-                <span
-                  v-for="size in item.sizes"
-                  :key="size"
-                  class="text-[9px] sm:text-[10px] font-medium border border-gray-200 rounded px-1 sm:px-1.5 py-0.5 bg-gray-50 text-gray-700"
-                >
-                  {{ size }}
-                </span>
-              </div>
-            </div>
-
-            <!-- Price -->
-            <div class="mt-auto pt-1.5 sm:pt-2 border-t border-gray-100">
-              <span class="text-base sm:text-lg font-extrabold text-gray-900">
-                ${{ Number(item.price).toFixed(2) }}
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span
+                v-for="cat in brand.categories.slice(0, 3)"
+                :key="cat"
+                class="text-[9px] sm:text-[10px] font-medium bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded"
+              >
+                {{ cat }}
+              </span>
+              <span
+                v-if="brand.categories.length > 3"
+                class="text-[9px] sm:text-[10px] font-medium text-gray-400"
+              >
+                +{{ brand.categories.length - 3 }}
               </span>
             </div>
 
-            <!-- Buttons -->
-            <div class="mt-2 sm:mt-3 flex flex-col gap-1.5 sm:gap-2">
-              <!-- Buy Now -->
-              <button
-                :disabled="!item.inStock"
-                @click="handleBuyNow(item)"
-                class="w-full min-h-[38px] px-2 py-2 text-[11px] sm:text-xs font-bold uppercase rounded transition-colors flex items-center justify-center"
-                :class="item.inStock
-                  ? 'bg-red-600 text-white hover:bg-red-700'
-                  : 'bg-gray-200 text-gray-400 cursor-not-allowed'"
+            <!-- ONLY ONE BUTTON -->
+            <div class="mt-auto pt-2 border-t border-gray-100">
+              <router-link
+                :to="`/brandD/${brand.id}`"
+                class="block w-full text-center py-2 text-[11px] sm:text-xs font-bold uppercase rounded-lg border border-gray-300 text-gray-700 hover:bg-black hover:text-white hover:border-black transition"
               >
-                Buy Now
-              </button>
-
-              <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
-                <!-- Add to Bag -->
-                <button
-                  :disabled="!item.inStock"
-                  @click="handleAddToCart(item)"
-                  class="w-full min-h-[38px] px-2 py-2 text-[11px] sm:text-xs font-bold uppercase rounded transition-colors flex items-center justify-center"
-                  :class="item.inStock
-                    ? 'bg-black text-white hover:bg-gray-800'
-                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'"
-                >
-                  {{ item.inStock ? 'Add to Bag' : 'Sold Out' }}
-                </button>
-
-                <!-- Details -->
-                <router-link
-                  :to="`/kidD/${item.id}`"
-                  class="w-full min-h-[38px] px-2 py-2 text-[11px] sm:text-xs font-bold uppercase rounded border border-gray-300 text-center text-gray-700 hover:bg-gray-100 transition flex items-center justify-center"
-                >
-                  Details
-                </router-link>
-              </div>
+                View Brand
+              </router-link>
             </div>
           </div>
         </div>
@@ -150,100 +111,39 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
-import { Kids_Types, type Shoe_kids } from '../../../data/Kids';
-import { useCart } from '../../../composables/useCart';
+import { BRANDS_DATA, type Category } from '../../../data/Brands';
+import Brands_Detail from './Brands_Detail.vue';
 
-const { addToCart } = useCart();
-const route = useRoute();
-const router = useRouter();
+const selectedCategory = ref('All');
+const filterType = ref('all');
 
-const selectedCategory = ref<string>('All');
-const sortBy = ref<string>('featured');
-
-const categories = computed(() => {
-  return Array.from(new Set(Kids_Types.map(item => item.category).filter(Boolean)));
+const allCategories = computed(() => {
+  const set = new Set<string>();
+  BRANDS_DATA.forEach(brand => {
+    brand.categories.forEach(cat => set.add(cat));
+  });
+  return Array.from(set).sort();
 });
 
-const getImageUrl = (product: any): string => {
-  const fallback = 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80';
-  if (!product) return fallback;
+const filteredBrands = computed(() => {
+  let result = [...BRANDS_DATA];
 
-  const target = product.images || product.imageUrl;
-  if (!target) return fallback;
-
-  if (typeof target === 'string') return target;
-  if (Array.isArray(target) && target.length > 0) return target[0];
-
-  if (typeof target === 'object') {
-    return target.img || target.img1 || (Object.values(target)[0] as string) || fallback;
+  if (filterType.value === 'featured') {
+    result = result.filter(b => b.featured);
   }
 
-  return fallback;
-};
-
-const filteredProducts = computed(() => {
-  let result = [...Kids_Types];
-
-  // Search filter
-  const q = ((route.query.q as string) || '').toLowerCase().trim();
-  if (q) {
-    result = result.filter(item => {
-      const title = item.title?.toLowerCase() || '';
-      const brand = item.brand?.toLowerCase() || '';
-      const category = item.category?.toLowerCase() || '';
-      return title.includes(q) || brand.includes(q) || category.includes(q);
-    });
-  }
-
-  // Category filter
   if (selectedCategory.value !== 'All') {
-    result = result.filter(item => item.category === selectedCategory.value);
+    result = result.filter(b =>
+      b.categories.includes(selectedCategory.value as Category)
+    );
   }
 
-  // Sorting
-  if (sortBy.value === 'price-low') {
-    result.sort((a, b) => Number(a.price) - Number(b.price));
-  } else if (sortBy.value === 'price-high') {
-    result.sort((a, b) => Number(b.price) - Number(a.price));
-  }
-
+  result.sort((a, b) => Number(b.featured) - Number(a.featured));
   return result;
 });
 
 const resetFilters = () => {
   selectedCategory.value = 'All';
-  sortBy.value = 'featured';
+  filterType.value = 'all';
 };
-
-function handleAddToCart(product: Shoe_kids) {
-  if (!product.inStock) return;
-
-  addToCart({
-    id: `kids-${product.id}`,
-    title: product.title,
-    brand: product.brand || 'Famous Footwear',
-    price: Number(product.price),
-    image: getImageUrl(product),
-    type: 'Kids',
-    quantity: 1
-  } as any);
-}
-
-function handleBuyNow(product: Shoe_kids) {
-  if (!product.inStock) return;
-
-  const buyNowItem = {
-    id: `kids-${product.id}`,
-    title: product.title,
-    brand: product.brand || 'Famous Footwear',
-    price: Number(product.price),
-    image: getImageUrl(product),
-    quantity: 1,
-    type: 'Kids'
-  };
-
-  localStorage.setItem('famous_footwear_buynow', JSON.stringify(buyNowItem));
-  router.push('/checkout');
-}
 </script>
